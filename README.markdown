@@ -14,7 +14,7 @@ JSON Schema Validator for PHP
 Usage Example
 -
 
-    $schema = json_decode('{ type : 'object', properties : { a : { type : 'string' }} }');
+    $schema = json_decode('{ type : "object", properties : { a : { type : "string" }} }');
     $json = json_decode('{ a : 1 }');
 
     $result = JsonSchema::validate(
