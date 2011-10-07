@@ -21,3 +21,8 @@ Usage Example
         $json,
         $schema
     );
+
+    if (!$result->valid) {
+        echo "Errors: \n";
+	print_r($result->errors);
+    }
