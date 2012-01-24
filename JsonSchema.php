@@ -147,7 +147,7 @@ class JsonSchema {
     }
     $path = self::incrementPath($path,$i);
     // verify readonly
-    if($_changing && $schema.readonly) {
+    if($_changing && $schema->readonly) {
       self::adderror($path,'is a readonly field, it can not be changed');
     }
     // I think a schema cant be an array, only the items property
